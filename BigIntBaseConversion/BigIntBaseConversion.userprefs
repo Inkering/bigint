@@ -1,0 +1,23 @@
+﻿<Properties StartupConfiguration="{46EDB66B-5B55-4A2F-9C9E-B7A614EBC895}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="BigIntBaseConversion\Numeral.cs" line="45" offsetX="376" offsetY="604" expression="sum[0]" liveUpdate="False" />
+    <Watch file="BigIntBaseConversion\Numeral.cs" line="45" offsetX="531" offsetY="603" expression="sum[1]" liveUpdate="True" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="C:\Users\jason\Documents\Projects\BigIntBaseConversion\BigIntBaseConversion\Numeral.cs" line="45" column="1" />
+      <Breakpoint file="C:\Users\jason\Documents\Projects\BigIntBaseConversion\BigIntBaseConversion\Numeral.cs" line="49" column="1" />
+      <Breakpoint file="C:\Users\jason\Documents\Projects\BigIntBaseConversion\BigIntBaseConversion\Numeral.cs" line="53" column="1" />
+      <Breakpoint file="C:\Users\jason\Documents\Projects\BigIntBaseConversion\BigIntBaseConversion\Numeral.cs" line="57" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="BigIntBaseConversion\Numeral.cs">
+    <Files>
+      <File FileName="BigIntBaseConversion\Program.cs" Line="9" Column="8" />
+      <File FileName="BigIntBaseConversion\BigInteger.cs" Line="26" Column="21" />
+      <File FileName="BigIntBaseConversion\Numeral.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.BigIntBaseConversion PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

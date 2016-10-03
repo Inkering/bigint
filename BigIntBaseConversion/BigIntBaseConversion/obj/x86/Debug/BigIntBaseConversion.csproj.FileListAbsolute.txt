@@ -1,0 +1,4 @@
+C:\Users\jason\Documents\Projects\BigIntBaseConversion\BigIntBaseConversion\bin\Debug\BigIntBaseConversion.exe
+C:\Users\jason\Documents\Projects\BigIntBaseConversion\BigIntBaseConversion\bin\Debug\BigIntBaseConversion.pdb
+C:\Users\jason\Documents\Projects\BigIntBaseConversion\BigIntBaseConversion\obj\x86\Debug\BigIntBaseConversion.exe
+C:\Users\jason\Documents\Projects\BigIntBaseConversion\BigIntBaseConversion\obj\x86\Debug\BigIntBaseConversion.pdb
