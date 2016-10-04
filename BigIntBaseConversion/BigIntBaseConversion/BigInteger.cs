@@ -8,30 +8,30 @@ namespace BigIntBaseConversion
 		/// <summary>
 		/// Stores the numerals that make up this number as characters
 		/// in a list.
-		/// 
+		///
 		/// These characters are in order such that their INDEX in the List
 		/// corresponds to place-value power of the base.
-		/// 
-		/// e.g.  the 0th position is the one's place, 
+		///
+		/// e.g.  the 0th position is the one's place,
 		/// </summary>
 		/// <value>The numerals.</value>
-		protected List<char> Numerals 
+		protected List<char> Numerals
 		{
 			get; set;
 		}
 
 		/// <summary>
-		/// The 
+		/// The
 		/// </summary>
 		/// <value>The base.</value>
-		public int Base 
+		public int Base
 		{
 			get; protected set;
 		}
 
-		public String Value 
+		public String Value
 		{
-			get 
+			get
 			{
 				String output = "";
 				List<char> numerals = Numerals;
@@ -49,7 +49,7 @@ namespace BigIntBaseConversion
 		/// Converts the input to a reversed character list.
 		/// e.g.  "13827" -> { '7', '2', '8', '3', '1' }
 		/// this is to facilitate computation using the index of each
-		/// numeral as the power of the base for the place value. 
+		/// numeral as the power of the base for the place value.
 		/// </summary>
 		/// <returns>The to place value array.</returns>
 		/// <param name="input">Input.</param>
@@ -57,7 +57,7 @@ namespace BigIntBaseConversion
 		{
 			List<char> output = new List<char> ();
 
-			for (int i = input.Length - 1; i >= 0; i--) 
+			for (int i = input.Length - 1; i >= 0; i--)
 			{
 				output.Add (input [i]);
 			}

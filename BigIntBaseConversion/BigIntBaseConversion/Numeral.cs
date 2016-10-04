@@ -6,7 +6,7 @@ namespace BigIntBaseConversion
 	/// <summary>
 	/// Static class used for ensuring that everyone's encoding of numerals is consistent.
 	/// The Numerals string has the characters in the standard ordering.
-	/// 
+	///
 	/// Base64StandardEncoding is used for encoding raw data for transmission over different
 	/// stream protocols (such as the internet!).  There is a very particular algorithm for
 	/// doing this encoding! Hint-hint-hint~
@@ -25,7 +25,7 @@ namespace BigIntBaseConversion
 		/// The base64 standard encoding.
 		/// Note that this is not used for representing numbers!
 		/// This is used for base64 encoding of raw data.
-		/// 
+		///
 		/// Use of this is not yet implemented in this project
 		/// but is primarily here as a curiosity~
 		/// </summary>
@@ -60,7 +60,7 @@ namespace BigIntBaseConversion
 
 			char [] sum = { '0', a };
 
-			for (char count = '0'; count != b; count = Increment (count, inBase)) 
+			for (char count = '0'; count != b; count = Increment (count, inBase))
 			{
 				sum[1] = Increment (sum [1], inBase);
 
@@ -87,7 +87,7 @@ namespace BigIntBaseConversion
 		{
 			// if the numeral character given is not valid
 			// throw an Argument Out Of Range Exception.
-			if (Numerals.IndexOf (numeral) < 0) 
+			if (Numerals.IndexOf (numeral) < 0)
 			{
 				throw new ArgumentOutOfRangeException (
 					nameof (numeral),  // Gets the Name of the numeral variable
@@ -104,7 +104,7 @@ namespace BigIntBaseConversion
 		/// <param name="value">base 10 number to convert to a single numeral.</param>
 		public static char GetNumeralFromBase10 (int value)
 		{
-			if (value > 63 || value < 0) 
+			if (value > 63 || value < 0)
 			{
 				throw new ArgumentOutOfRangeException (
 					nameof (value),
@@ -125,7 +125,7 @@ namespace BigIntBaseConversion
 		public static char Increment (char n, int inBase = 10)
 		{
 			// Check to make sure that n is a vaild Numeral in the given base.
-			if (!Numerals.Substring (0, inBase).Contains (n)) 
+			if (!Numerals.Substring (0, inBase).Contains (n))
 			{
 				// if it isn't, then throw an ArgumentOutOfRangeException.
 				throw new ArgumentOutOfRangeException (
@@ -135,7 +135,7 @@ namespace BigIntBaseConversion
 
 			// convert the Numeral Character into an abstract Number.
 			int index = Numerals.IndexOf (n);
-			index = (index + 1) % inBase;       
+			index = (index + 1) % inBase;
 			// "% inBase" ensures the wrap-around!
 			// e.g.  in Base 10, '9' -> 9 + 1 = 10 -> 10 % 10 = 0.
 
