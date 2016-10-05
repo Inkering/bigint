@@ -4,3 +4,5 @@ C:\Users\jason\Documents\Projects\BigIntBaseConversion\BigIntBaseConversion\obj\
 C:\Users\jason\Documents\Projects\BigIntBaseConversion\BigIntBaseConversion\obj\x86\Debug\BigIntBaseConversion.pdb
 C:\Users\dieterbrehm\repos\PersonalProjects\Create1A\BigIntBaseConversion\BigIntBaseConversion\obj\x86\Debug\BigIntBaseConversion.exe
 C:\Users\dieterbrehm\repos\PersonalProjects\Create1A\BigIntBaseConversion\BigIntBaseConversion\obj\x86\Debug\BigIntBaseConversion.pdb
+C:\Users\dieterbrehm\repos\PersonalProjects\Create1A\BigIntBaseConversion\BigIntBaseConversion\bin\Debug\BigIntBaseConversion.exe
+C:\Users\dieterbrehm\repos\PersonalProjects\Create1A\BigIntBaseConversion\BigIntBaseConversion\bin\Debug\BigIntBaseConversion.pdb

@@ -8,8 +8,11 @@ namespace BigIntBaseConversion
 		{
 			try
 			{
-				char [] sum = Numeral.AddSingleNumerals ('C', 'Q', 64);
-				Console.WriteLine ("C + F = {0}{1}", sum [0], sum [1]);
+				//char [] sum = Numeral.AddSingleNumerals ('C', 'Q', 64);
+				//Console.WriteLine ("C + F = {0}{1}", sum [0], sum [1]);
+				BigInteger newInt = new BigInteger("640", 10);
+				Console.WriteLine(newInt.ToString());
+				Console.WriteLine(newInt.ToLongString());
 			}
 			catch (ArgumentOutOfRangeException e)
 			{

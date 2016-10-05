@@ -21,20 +21,48 @@ namespace BigIntBaseConversion
 		}
 
 		/// <summary>
-		/// The
+		/// Stores the base property
 		/// </summary>
-		/// <value>The base.</value>
+		/// <value>The base</value>
 		public int Base
 		{
 			get; protected set;
 		}
+		/// <summary>
+		/// The sign value. Stores whether the bigInteger is considered negative or not.
+		/// </summary>
+		/// <returns>Either bool True or False </returns>
+		public bool Sign
+		{
+			get; protected set;
+		}
 
+		/// <summary>
+		/// Returns the value of the bigInt in the form of a string
+		/// </summary>
+		/// <returns> string of bigint </returns>
+		public override string ToString()
+		{
+			return string.Format("BigInteger: Value={0}", Value);
+		}
+		/// <summary>
+		/// Returns the value of the bigInt in the form of a string plus the string form of its base.
+		/// </summary>
+		/// <returns> string of bigint and its base</returns>
+		public string ToLongString()
+		{
+			return string.Format("BigInteger: Value={0}, Base={1}", Value, Base);
+		}
+		/// <summary>
+		/// Gets the value.
+		/// </summary>
+		/// <value>The value.</value>
 		public String Value
 		{
 			get
 			{
 				String output = "";
-				List<char> numerals = Numerals;
+				List<char> numerals = new List<char>(Numerals);
 				numerals.Reverse ();
 				foreach (char numeral in numerals)
 				{
@@ -59,7 +87,7 @@ namespace BigIntBaseConversion
 
 			for (int i = input.Length - 1; i >= 0; i--)
 			{
-				output.Add (input [i]);
+				output.Add(input [i]);
 			}
 
 			return output;
@@ -72,7 +100,17 @@ namespace BigIntBaseConversion
 		public BigInteger (String base10Numeral)
 		{
 			Base = 10;
-			Numerals = StringToPlaceValueArray (base10Numeral);
+			Numerals = StringToPlaceValueArray(base10Numeral);
+		}
+		/// <summary>
+		/// Create a new m-base BigInteger
+		/// </summary>
+		/// <param name="numeral">Numeral.</param>
+		/// <param name="aBase">its base.</param>
+		public BigInteger(String numeral, int aBase)
+		{
+			Base = aBase;
+			Numerals = StringToPlaceValueArray(numeral);
 		}
 	}
 }
