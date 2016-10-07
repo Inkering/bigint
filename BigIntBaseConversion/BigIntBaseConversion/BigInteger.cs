@@ -92,6 +92,25 @@ namespace BigIntBaseConversion
 
 			return output;
 		}
+		public BigInteger operator+(BigInteger a, BigInteger b) 
+		{
+			BigInteger c = new BigInteger();
+			c.Base = 10;
+			list<char> aNum = a.Numerals;
+			list<char> bNum = b.Numerals;
+
+			List<char> Sum = 
+			char carry = '0';
+
+
+			for (char i = '0'; i = bNum; i = Numeral.Increment(i))
+			{
+			}
+
+
+
+			return c;
+		}
 
 		/// <summary>
 		/// Create a new Base 10 BigInteger
@@ -111,6 +130,9 @@ namespace BigIntBaseConversion
 		{
 			Base = aBase;
 			Numerals = StringToPlaceValueArray(numeral);
+		}
+		public BigInteger() 
+		{
 		}
 	}
 }
