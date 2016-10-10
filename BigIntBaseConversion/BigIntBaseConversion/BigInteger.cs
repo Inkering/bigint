@@ -99,12 +99,14 @@ namespace BigIntBaseConversion
 			list<char> aNum = a.Numerals;
 			list<char> bNum = b.Numerals;
 
-			List<char> Sum = 
+			List<char> Sum = ['0', 'aNum']
 			char carry = '0';
 
 
 			for (char i = '0'; i = bNum; i = Numeral.Increment(i))
 			{
+				Numeral.Increment(Sum[1]);
+
 			}
 
 
