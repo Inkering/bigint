@@ -3,3 +3,10 @@
 /Users/alexhackel/Projects/Create1A/BigIntBaseConversion/BigIntBaseConversion/bin/Debug/BigIntBaseConversion.exe
 /Users/alexhackel/Projects/Create1A/BigIntBaseConversion/BigIntBaseConversion/obj/x86/Debug/BigIntBaseConversion.exe
 /Users/alexhackel/Projects/Create1A/BigIntBaseConversion/BigIntBaseConversion/obj/x86/Debug/BigIntBaseConversion.exe.mdb
+/Users/dieterbrehm/git/Create1A/BigIntBaseConversion/BigIntBaseConversion/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/dieterbrehm/git/Create1A/BigIntBaseConversion/BigIntBaseConversion/obj/x86/Debug/BigIntBaseConversion.exe
+/Users/dieterbrehm/git/Create1A/BigIntBaseConversion/BigIntBaseConversion/obj/x86/Debug/BigIntBaseConversion.exe.mdb
+/Users/dieterbrehm/git/Create1A/BigIntBaseConversion/BigIntBaseConversion/obj/x86/Debug/BigIntBaseConversion.pdb
+/Users/dieterbrehm/git/Create1A/BigIntBaseConversion/BigIntBaseConversion/bin/Debug/BigIntBaseConversion.exe.mdb
+/Users/dieterbrehm/git/Create1A/BigIntBaseConversion/BigIntBaseConversion/bin/Debug/BigIntBaseConversion.pdb
+/Users/dieterbrehm/git/Create1A/BigIntBaseConversion/BigIntBaseConversion/bin/Debug/BigIntBaseConversion.exe

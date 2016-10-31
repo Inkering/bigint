@@ -40,40 +40,40 @@ namespace BigIntBaseConversion
 		/// <returns>The sum of the two single numerals.</returns>
 		/// <param name="a">a single numeral.</param>
 		/// <param name="b">a single numeral.</param>
-		public static char [] AddSingleNumerals (char a, char b, int inBase = 10)
+		public static char[] AddSingleNumerals(char a, char b, int inBase = 10)
 		{
 			// Check to make sure that n is a vaild Numeral in the given base.
-			if (!Numerals.Substring (0, inBase).Contains (a)) {
+			if (!Numerals.Substring(0, inBase).Contains(a))
+			{
 				// if it isn't, then throw an ArgumentOutOfRangeException.
-				throw new ArgumentOutOfRangeException (
-					nameof (a),
-					String.Format ("'{0}' is not a valid base {1} Numeral", a, inBase));
+				throw new ArgumentOutOfRangeException(
+					nameof(a),
+					String.Format("'{0}' is not a valid base {1} Numeral", a, inBase));
 			}
 
 			// Check to make sure that n is a vaild Numeral in the given base.
-			if (!Numerals.Substring (0, inBase).Contains (b)) {
+			if (!Numerals.Substring(0, inBase).Contains(b))
+			{
 				// if it isn't, then throw an ArgumentOutOfRangeException.
-				throw new ArgumentOutOfRangeException (
-					nameof (b),
-					String.Format ("'{0}' is not a valid base {1} Numeral", b, inBase));
+				throw new ArgumentOutOfRangeException(
+					nameof(b),
+					String.Format("'{0}' is not a valid base {1} Numeral", b, inBase));
 			}
 
-			char [] sum = { '0', a };
+			char[] sum = { '0', a };
 
-			for (char count = '0'; count != b; count = Increment (count, inBase))
+			for (char count = '0'; count != b; count = Increment(count, inBase))
 			{
-				sum[1] = Increment (sum [1], inBase);
+				sum[1] = Increment(sum[1], inBase);
 
-				if (sum [1] == '0') // if the Increment wrapped around back to zero.
+				if (sum[1] == '0') // if the Increment wrapped around back to zero.
 				{
-					sum [0] = '1';
+					sum[0] = '1';
 				}
 			}
 
 			return sum;
-		} 
-
-
+		}
 
 #region Change between Int32 and Char
 
